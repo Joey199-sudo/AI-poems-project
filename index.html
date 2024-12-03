@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI ZULU POEM Generator</title>
     <link rel="stylesheet" href="src/style.css">
-
+     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>          
 </head>
 <body>
 <div class="container">
     <header><h1>Welcome to the zulu poem generator</h1></header>
     
     <main>
-        <form action="">
+        <form action="" id="poem-generator-form">
             <input class="instructions" type="text" placeholder="Enter the topic of the Zulu Poem" autofocus required autocomplete="off">
             <input type="submit" class="submit-button">
 
         </form>
-        <div class="poem">
-            Intombi nto
-            <br>
-            Smatsatsa
+        <div class="poem" id="poem">
+           
         </div>
     </main>
 
@@ -30,7 +28,7 @@
 
 </div>
 
-
     <script src="src/index.js"></script>
+   
 </body>
 </html>
