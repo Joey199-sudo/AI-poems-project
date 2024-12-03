@@ -7,11 +7,7 @@ new Typewriter('#poem', {
   delay:1,
   cursor:"",
 });
- 
 }
-
-
-
 
 function generatePoem(event){
     event.preventDefault();
@@ -21,7 +17,7 @@ function generatePoem(event){
     //display the generated poem
 
 
-    let instructionsInput = document.querySelector("user-instructions");
+    let instructionsInput = document.querySelector("#user-instructions");
     let apiKey="bf5oac1604d9d228143bbe638f30t8d8";
     let context="You are a romantic expert. Your mission is to generate a 4 line poem in basic HTML. Make sure to follow user instructions"; 
     let prompt =`user instruction: Genereate a zulu poem about ${instructionsInput.value}`;
